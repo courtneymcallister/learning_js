@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays!</title>
+  </head>
+  <body>
+    <h1>Arrays!</h1>
+    <script>
+      var numbers = [2, 3, 5, 7, 42, 113]; //array literal
+      var letters = new Array('a', 'b', 'c', 'd');
+      //ruh roh, probs dont use this
+      // var someMoreNumbers = new Array(3);
+      // var someMoreNumbers = new Array(3, 1);
+      // var someMoreLetters = new Array('a');
+
+      // console.log(numbers);
+      // console.log(numbers.reverse());
+      // console.log(letters);
+      // numbers.reverse();
+      // console.log(numbers);
+
+      // functions
+      function double(num){
+        return 2 * num;
+      };
+      function triple(num){
+        return 3 * num;
+      };
+      function toString(num){
+        return String(num);
+      };
+      function isLessThan20(num){
+        return num < 20;
+      };
+
+      // map - transform, give a new result
+      // var numbersLessThan20 = numbers.map(isLessThan20);
+      // console.log(numbers);
+      // console.log(numbersLessThan20);
+
+      // var doubled = numbers.map(double);
+      // console.log(numbers);
+      // console.log(doubled);
+
+      // filter, boolean conditions only
+      var lessThan = numbers.filter(isLessThan20);
+      var filterDouble = numbers.filter(double);
+      console.log(lessThan);
+      console.log(filterDouble);
+      console.log(numbers);
+
+      var stringNums = numbers.map(toString);
+      console.log(stringNums);
+      // forEach
+      // reduce
+
+    </script>
+  </body>
+</html>
