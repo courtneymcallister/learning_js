@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Booleans</title>
+  </head>
+  <body>
+    <h1>Introduction to Booleans</h1>
+    <script>
+      var yes = true;
+      var no = false;
+      //dis is bad
+      // console.log(yes + no);
+
+      // Boolean Operators
+      // Not Operator --> !, opposite
+      // console.log(!yes);
+      // // And Operator --> &&, both have to be true
+      // console.log(yes && yes); //true
+      // console.log(yes && no); //false
+      // console.log(no && yes); //false
+      // console.log(no && no); //false
+      // // Or Operator --> ||, at least one must be true
+      // console.log(yes || yes); //true
+      // console.log(yes || no); //true
+      // console.log(no || yes); //true
+      // console.log(no || no); //false
+      // Comparative Operators: compare values of data
+      // less than, less than or equal to (greater than, etc)
+
+      // // Equal To (2)
+      // console.log(2 == 2);
+      // console.log(2 === 2);
+      // console.log('2' == 2); //coercive/loose equality
+      // console.log('2' === 2); //strict equality (types)
+      // // Not Equal To (2)
+      // console.log('2' != 3);
+      // console.log('2' !== 3);
+      // console.log('2' != 2); //false
+      // console.log('2' !== 2); //true
+      //uh ohs
+      // console.log('' == false); //true
+      // console.log('' === false); //false
+      // console.log(' ' == false); //true, space acts different than letters
+      // console.log(' ' === false); //false
+      // console.log('sofhie' == false); //false
+      // console.log('nsoiheo' === false); //false
+
+      var user = ' '; //truthy value
+      if(user){
+        console.log('found'); //this will print
+      }
+
+      var user = ''; //falsy value
+      if(user){
+        console.log('found'); //will not print
+      }
+
+
+
+    </script>
+  </body>
+</html>
